@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Home page for WDD231 course - Fernando Tau">
+  <meta name="author" content="Fernando Tau">
+  <title>Fernando Tau - WDD231 Home Page</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- JS -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="FT Logo" class="logo">
+
+    <span>Fernando Tau</span>
+    <button id="menu" aria-label="Menu">☰</button>
+  </header>
+
+  <nav class="navigation">
+    <a href="index.html">Home</a>
+    <a href="#">Chamber</a>
+    <a href="#">Final</a>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+
+    <section>
+      <h2>About Me</h2>
+      <p>Hi! I’m Fernando Tau, a student at BYU-Idaho learning Web Development. I enjoy coding, designing websites, and improving my skills in front-end technologies.</p>
+    </section>
+
+    <section>
+      <h2>Courses</h2>
+      <div id="courseContainer"></div>
+      <div class="filters">
+        <button id="all">All Courses</button>
+        <button id="wdd">WDD Courses</button>
+        <button id="cse">CSE Courses</button>
+      </div>
+      <p>Total Credits: <span id="totalCredits">0</span></p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: fernandomatiastau@gmail.com</p>
+      <p>Portfolio: <a href="https://yourportfolio.com" target="_blank">yourportfolio.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+  <a href="https://github.com/Matt091088" target="_blank">GitHub</a>
+  <a href="https://linkedin.com/in/fernando-tau-874a74365" target="_blank">LinkedIn</a>
+</div>
+
+    <p>
+      &copy; <span id="currentyear"></span> | Fernando Tau | Argentina
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
