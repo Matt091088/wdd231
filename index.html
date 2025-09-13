@@ -7,6 +7,20 @@
   <meta name="author" content="Fernando Tau">
   <title>Fernando Tau - WDD231 Home Page</title>
 
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:title" content="Fernando Tau - WDD231 Home Page">
+  <meta property="og:description" content="Welcome to my WDD231 course home page where I share my assignments and projects for web development.">
+  <meta property="og:image" content="images/imagesmediasocial.png">
+  <meta property="og:url" content="https://yourgithubusername.github.io/wdd231/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fernando Tau - WDD231 Home Page">
+  <meta name="twitter:description" content="Welcome to my WDD231 course home page where I share my assignments and projects for web development.">
+  <meta name="twitter:image" content="images/imagesmediasocial.png">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +30,7 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <!-- JS -->
   <script src="scripts/navigation.js" defer></script>
@@ -25,7 +40,6 @@
 <body>
   <header>
     <img src="images/logo.png" alt="FT Logo" class="logo">
-
     <span>Fernando Tau</span>
     <button id="menu" aria-label="Menu">☰</button>
   </header>
@@ -64,13 +78,10 @@
 
   <footer>
     <div class="social">
-  <a href="https://github.com/Matt091088" target="_blank">GitHub</a>
-  <a href="https://linkedin.com/in/fernando-tau-874a74365" target="_blank">LinkedIn</a>
-</div>
-
-    <p>
-      &copy; <span id="currentyear"></span> | Fernando Tau | Argentina
-    </p>
+      <a href="https://github.com/Matt091088" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/fernando-tau-874a74365" target="_blank">LinkedIn</a>
+    </div>
+    <p>&copy; <span id="currentyear"></span> | Fernando Tau | Argentina</p>
     <p id="lastModified"></p>
   </footer>
 </body>

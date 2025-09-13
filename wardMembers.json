@@ -1,0 +1,86 @@
+[
+  {
+    "familyName": "Tau",
+    "moveInDate": "2025-09-01",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "members": [
+      {
+        "name": "Fernando Tau",
+        "gender": "male",
+        "birthdate": "2000-04-15"
+      },
+      {
+        "name": "Guillermina Tau",
+        "gender": "female",
+        "birthdate": "2001-11-22"
+      },
+      {
+        "name": "Lucas Tau",
+        "gender": "male",
+        "birthdate": "2010-06-10"
+      },
+      {
+        "name": "Sofía Tau",
+        "gender": "female",
+        "birthdate": "2013-08-05"
+      }
+    ]
+  },
+  {
+    "familyName": "Stempel",
+    "moveInDate": "2024-07-15",
+    "numberOfPeople": 3,
+    "visitedByBishopric": false,
+    "members": [
+      {
+        "name": "Matías Stempel",
+        "gender": "male",
+        "birthdate": "1985-02-18"
+      },
+      {
+        "name": "Laura Stempel",
+        "gender": "female",
+        "birthdate": "1987-09-30"
+      },
+      {
+        "name": "Valentina Stempel",
+        "gender": "female",
+        "birthdate": "2012-12-05"
+      }
+    ]
+  },
+  {
+    "familyName": "Cardozo",
+    "moveInDate": "2023-05-20",
+    "numberOfPeople": 5,
+    "visitedByBishopric": true,
+    "members": [
+      {
+        "name": "Ricardo Cardozo",
+        "gender": "male",
+        "birthdate": "1980-04-10"
+      },
+      {
+        "name": "Mariana Cardozo",
+        "gender": "female",
+        "birthdate": "1983-09-22"
+      },
+      {
+        "name": "Julian Cardozo",
+        "gender": "male",
+        "birthdate": "2008-01-15"
+      },
+      {
+        "name": "Camila Cardozo",
+        "gender": "female",
+        "birthdate": "2010-03-18"
+      },
+      {
+        "name": "Tomás Cardozo",
+        "gender": "male",
+        "birthdate": "2015-07-30"
+      }
+    ]
+  }
+]
