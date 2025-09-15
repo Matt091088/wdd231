@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Power Gym",
+    "address": "Av. Corrientes 1234, Posadas, Misiones",
+    "phone": "+54 376 4000001",
+    "website": "https://powergym-posadas.com",
+    "membership": "Gold",
+    "image": "images/powergymlogo.png"
+  },
+  {
+    "name": "City Hotel",
+    "address": "Calle Bolívar 567, Posadas, Misiones",
+    "phone": "+54 376 4000002",
+    "website": "https://cityhotel-posadas.com",
+    "membership": "Silver",
+    "image": "images/citylogo.jpeg"
+  },
+  {
+    "name": "California Supermercado",
+    "address": "Av. Uruguay 2345, Posadas, Misiones",
+    "phone": "+54 376 4000003",
+    "website": "https://californiasuper.com",
+    "membership": "Bronze",
+    "image": "images/californialogo.png"
+  },
+  {
+    "name": "Gentizi Home & Deco",
+    "address": "San Lorenzo 890, Posadas, Misiones",
+    "phone": "+54 376 4000004",
+    "website": "https://gentizi.com",
+    "membership": "Gold",
+    "image": "images/gentizilogo.png"
+  },
+  {
+    "name": "Libertad Supermercado",
+    "address": "RN12, Km 7, Posadas, Misiones",
+    "phone": "+54 376 4000005",
+    "website": "https://libertad.com.ar",
+    "membership": "Silver",
+    "image": "images/libertadlogo.png"
+  },
+  {
+    "name": "Universidad de Misiones",
+    "address": "Ruta 12, Campus Universitario, Posadas, Misiones",
+    "phone": "+54 376 4000006",
+    "website": "https://unam.edu.ar",
+    "membership": "Gold",
+    "image": "images/unamlogo.png"
+  },
+  {
+    "name": "Posadas Travel Agency",
+    "address": "Colón 345, Posadas, Misiones",
+    "phone": "+54 376 4000007",
+    "website": "https://posadastravel.com",
+    "membership": "Bronze",
+    "image": "images/posadastravelLogo.jpeg"
+  }
+]

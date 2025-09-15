@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Business Directory - Posadas Chamber of Commerce">
+  <meta name="author" content="Fernando Tau">
+  <title>Posadas Chamber of Commerce | Directory</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/posadasfavicom.png" type="image/png">
+
+  <!-- Facebook Open Graph Meta -->
+  <meta property="og:title" content="Posadas Chamber of Commerce Directory">
+  <meta property="og:description" content="Discover local businesses in Posadas, Misiones.">
+  <meta property="og:image" content="images/posadas-chamber-logo.png">
+  <meta property="og:url" content="https://tu-usuario.github.io/wdd231/chamber/directory.html">
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="images/posadasfavicom.png" alt="Posadas Chamber Logo" class="logo">
+    <h1>Posadas Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Business Directory</h2>
+    <div class="view-buttons">
+      <button id="gridBtn">Grid</button>
+      <button id="listBtn">List</button>
+    </div>
+    <div id="members-container" class="members"></div>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Posadas Chamber of Commerce</p>
+    <p>WDD 231 | Fernando Tau</p>
+    <p>Last modification: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="directory.js"></script>
+</body>
+</html>
