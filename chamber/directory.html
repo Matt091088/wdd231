@@ -10,12 +10,6 @@
   <!-- Favicon -->
   <link rel="icon" href="images/posadasfavicom.webp" type="image/webp">
 
-  <!-- Facebook Open Graph Meta -->
-  <meta property="og:title" content="Posadas Chamber of Commerce Directory">
-  <meta property="og:description" content="Discover local businesses in Posadas, Misiones.">
-  <meta property="og:image" content="images/posadas/chamber/logo">
-  <meta property="og:url" content="https://tu-usuario.github.io/wdd231/chamber/directory.html">
-
   <!-- Normalize CSS -->
   <link rel="stylesheet" href="css/normalize.css">
   <!-- Custom CSS -->
@@ -23,11 +17,12 @@
 </head>
 <body>
   <header>
-    <img src="images/posadasfavicom.webp" alt="Posadas Chamber Logo" class="logo">
+    <img src="images/posadasfavicom.webp" alt="Posadas Chamber Logo" class="logo" width="60" height="60">
     <h1>Posadas Chamber of Commerce</h1>
     <nav>
       <ul>
-        <li><a href="directory.html">Directory</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Events</a></li>
         <li><a href="#">Contact</a></li>
@@ -50,6 +45,7 @@
     <p>Last modification: <span id="lastModified"></span></p>
   </footer>
 
-  <script src="directory.js"></script>
+  <!-- Script específico para el directorio -->
+  <script src="directory.js" defer></script>
 </body>
 </html>
