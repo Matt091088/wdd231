@@ -5,7 +5,7 @@
     "phone": "+54 376 4000001",
     "website": "https://powergym-posadas.com",
     "membership": "Gold",
-    "image": "images/powergymlogo.png"
+    "image": "images/powergymlogo.webp"
   },
   {
     "name": "City Hotel",
@@ -13,7 +13,7 @@
     "phone": "+54 376 4000002",
     "website": "https://cityhotel-posadas.com",
     "membership": "Silver",
-    "image": "images/citylogo.jpeg"
+    "image": "images/citylogo.webp"
   },
   {
     "name": "California Supermercado",
@@ -21,7 +21,7 @@
     "phone": "+54 376 4000003",
     "website": "https://californiasuper.com",
     "membership": "Bronze",
-    "image": "images/californialogo.png"
+    "image": "images/californialogo.webp"
   },
   {
     "name": "Gentizi Home & Deco",
@@ -29,7 +29,7 @@
     "phone": "+54 376 4000004",
     "website": "https://gentizi.com",
     "membership": "Gold",
-    "image": "images/gentizilogo.png"
+    "image": "images/gentizilogo.webp"
   },
   {
     "name": "Libertad Supermercado",
@@ -37,7 +37,7 @@
     "phone": "+54 376 4000005",
     "website": "https://libertad.com.ar",
     "membership": "Silver",
-    "image": "images/libertadlogo.png"
+    "image": "images/libertadlogo.webp"
   },
   {
     "name": "Universidad de Misiones",
@@ -45,7 +45,7 @@
     "phone": "+54 376 4000006",
     "website": "https://unam.edu.ar",
     "membership": "Gold",
-    "image": "images/unamlogo.png"
+    "image": "images/unamlogo.webp"
   },
   {
     "name": "Posadas Travel Agency",
@@ -53,6 +53,6 @@
     "phone": "+54 376 4000007",
     "website": "https://posadastravel.com",
     "membership": "Bronze",
-    "image": "images/posadastravelLogo.jpeg"
+    "image": "images/posadastravelLogo.webp"
   }
 ]
