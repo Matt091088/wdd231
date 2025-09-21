@@ -1,54 +1,96 @@
-// js/directory.js
+// ------------------------
+// Mostrar año y última modificación
+// ------------------------
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = document.lastModified;
 
-// 1. Leer datos del JSON
-async function loadMembers() {
-  try {
-    const response = await fetch("data/members.json");
-    const members = await response.json();
-    displayMembers(members, "grid"); // por defecto en grid
-  } catch (error) {
-    console.error("Error al cargar los miembros:", error);
-  }
+// ------------------------
+// Spotlights - cargar 2-3 miembros GOLD/SILVER aleatorios
+// ------------------------
+fetch("data/members.json")
+  .then(response => response.json())
+  .then(members => {
+    // Filtrar GOLD/SILVER ignorando mayúsculas/minúsculas
+    const goldSilver = members.filter(m =>
+      m.membership.toUpperCase() === "GOLD" || m.membership.toUpperCase() === "SILVER"
+    );
+
+    const spotlightCount = Math.min(3, goldSilver.length);
+    const selected = [];
+    while (selected.length < spotlightCount) {
+      const random = goldSilver[Math.floor(Math.random() * goldSilver.length)];
+      if (!selected.includes(random)) selected.push(random);
+    }
+
+    const container = document.querySelector(".spotlight-container");
+    container.innerHTML = ""; // Limpiar contenedor antes de agregar
+
+    selected.forEach(member => {
+      const card = document.createElement("div");
+      card.className = "spotlight-card";
+
+      // Crear imagen
+      const logo = document.createElement("img");
+      logo.src = member.image.trim();
+      logo.alt = `${member.name} logo`;
+      logo.loading = "lazy";
+      logo.className = "spotlight-logo";
+
+      // Asignar width y height correctos según cada imagen
+      switch (member.name) {
+        case "Power Gym":
+          logo.width = 200;
+          logo.height = 200;
+          break;
+        case "City Hotel":
+          logo.width = 200;
+          logo.height = 200;
+          break;
+        case "Libertad Supermercado":
+          logo.width = 245;
+          logo.height = 154;
+          break;
+        case "California Supermercado":
+          logo.width = 225;
+          logo.height = 225;
+          break;
+        case "Gentizi Home & Deco":
+          logo.width = 225;
+          logo.height = 225;
+          break;
+        case "Universidad de Misiones":
+          logo.width = 225;
+          logo.height = 225;
+          break;
+        case "Posadas Travel Agency":
+          logo.width = 225;
+          logo.height = 225;
+          break;
+        default:
+          logo.width = 150;
+          logo.height = 150;
+      }
+
+      // Insertar elementos
+      card.appendChild(logo);
+      card.innerHTML += `
+        <h3>${member.name}</h3>
+        <p>Phone: ${member.phone}</p>
+        <p>Address: ${member.address}</p>
+        <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>
+        <p>Membership: ${member.membership}</p>
+      `;
+      container.appendChild(card);
+    });
+  })
+  .catch(error => console.error("Error loading members:", error));
+
+// ------------------------
+// Mostrar año y última modificación (si no lo tienes en home.js)
+// ------------------------
+if(document.getElementById("year")) {
+  document.getElementById("year").textContent = new Date().getFullYear();
 }
-
-// 2. Mostrar empresas en el HTML
-function displayMembers(members, view) {
-  const container = document.querySelector("#members-container");
-  container.innerHTML = ""; // limpiar antes de renderizar
-
-  members.forEach((member) => {
-    const card = document.createElement("section");
-    card.classList.add("member-card", view);
-
-    card.innerHTML = `
-      <img src="${member.image}" alt="${member.name} logo">
-      <h3>${member.name}</h3>
-      <p>${member.address}</p>
-      <p>📞 ${member.phone}</p>
-      <a href="${member.website}" target="_blank">Visitar sitio</a>
-      <p class="membership">Nivel: ${member.membership}</p>
-    `;
-
-    container.appendChild(card);
-  });
+if(document.getElementById("lastModified")) {
+  document.getElementById("lastModified").textContent = document.lastModified;
 }
-
-// 3. Botones para cambiar vista
-document.querySelector("#gridBtn").addEventListener("click", () => {
-  fetch("data/members.json")
-    .then((res) => res.json())
-    .then((members) => displayMembers(members, "grid"));
-});
-
-document.querySelector("#listBtn").addEventListener("click", () => {
-  fetch("data/members.json")
-    .then((res) => res.json())
-    .then((members) => displayMembers(members, "list"));
-});
-
-// 4. Footer dinámico
-document.querySelector("#year").textContent = new Date().getFullYear();
-document.querySelector("#lastModified").textContent = document.lastModified;
-
-// Llamada inicial
-loadMembers();

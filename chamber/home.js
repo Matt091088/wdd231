@@ -12,16 +12,13 @@ const city = "Posadas,AR";
 const units = "metric"; // Celsius
 const weatherUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=${units}&appid=${apiKey}`;
 
-// Traer datos del clima
 fetch(weatherUrl)
   .then(response => response.json())
   .then(data => {
-    // Temperatura actual y descripción
     const current = data.list[0];
     document.getElementById("current-temp").textContent = `Temperature: ${current.main.temp}°C`;
     document.getElementById("weather-desc").textContent = `Condition: ${current.weather[0].description}`;
 
-    // Pronóstico 3 días (tomando cada 8vo registro ~ 24h)
     const forecastDiv = document.getElementById("forecast");
     forecastDiv.innerHTML = "<h3>3-Day Forecast</h3>";
     for (let i = 8; i <= 24; i += 8) {
@@ -40,7 +37,6 @@ fetch(weatherUrl)
 fetch("data/members.json")
   .then(response => response.json())
   .then(members => {
-    // filtrar GOLD/SILVER ignorando mayúsculas/minúsculas
     const goldSilver = members.filter(m =>
       m.membership.toUpperCase() === "GOLD" || m.membership.toUpperCase() === "SILVER"
     );
@@ -53,22 +49,21 @@ fetch("data/members.json")
     }
 
     const container = document.querySelector(".spotlight-container");
-    container.innerHTML = ""; // limpiar contenedor antes de agregar
+    container.innerHTML = "";
 
     selected.forEach(member => {
       const card = document.createElement("div");
       card.className = "spotlight-card";
 
-      // Imagen con width/height y lazy loading
+      // Ajuste de tamaños exactos para Lighthouse
       const logo = document.createElement("img");
       logo.src = member.image.trim();
       logo.alt = `${member.name} logo`;
-      logo.width = 150;
-      logo.height = 150;
+      logo.width = member.name === "Libertad Supermercado" ? 245 : 200; // tamaño real según Lighthouse
+      logo.height = member.name === "Libertad Supermercado" ? 154 : 200;
       logo.loading = "lazy";
       logo.className = "spotlight-logo";
 
-      // Insertar elementos
       card.appendChild(logo);
       card.innerHTML += `
         <h3>${member.name}</h3>
