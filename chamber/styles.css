@@ -1,6 +1,4 @@
-/* css/styles.css */
 
-/* Reset básico */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -307,6 +305,8 @@ footer {
   text-align: center;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s ease;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
 }
 
 .spotlight-card:hover {
@@ -339,4 +339,21 @@ footer {
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+/* Animación inicial de las membership cards */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.membership-card {
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0; /* comienza invisible */
 }
