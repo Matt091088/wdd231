@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Costanera of Posadas",
+    "address": "Posadas, Misiones, Argentina",
+    "description": "A beautiful riverside walk along the Paraná River, ideal for cycling, walking, and enjoying sunsets.",
+    "image": "images/costanera.webp"
+  },
+  {
+    "name": "San Roque González de Santa Cruz Bridge",
+    "address": "Posadas, Misiones, Argentina",
+    "description": "An impressive bridge connecting Posadas, Argentina, with Encarnación, Paraguay, offering scenic views of the river.",
+    "image": "images/puentePosadas.webp"
+  },
+  {
+    "name": "Andrés Guacurarí Statue",
+    "address": "Posadas, Misiones, Argentina",
+    "description": "A large bronze monument honoring the local hero Andrés Guacurarí, located on the Costanera Avenue.",
+    "image": "images/andresito.webp"
+  },
+  {
+    "name": "Parque del Conocimiento",
+    "address": "Posadas, Misiones, Argentina",
+    "description": "A modern cultural complex with a library, science center, and theater, promoting art and technology.",
+    "image": "images/centro-del-conocimiento.webp"
+  },
+  {
+    "name": "Alberto Roth Botanical Garden",
+    "address": "Av. Balcarce & Costanera, Posadas, Misiones, Argentina",
+    "description": "A natural park with native flora and fauna, perfect for ecological walks and environmental education.",
+    "image": "images/jardinbotanico.webp"
+  },
+  {
+    "name": "Palacio del Mate Museum",
+    "address": "Rivadavia & Bolívar, Posadas, Misiones, Argentina",
+    "description": "Also known as Lucas Braulio Areco Museum, it showcases regional art and cultural exhibitions.",
+    "image": "images/PalaciodelMate.webp"
+  },
+  {
+    "name": "Juan Yaparí Provincial Museum of Fine Arts",
+    "address": "Sarmiento 1885 (ex 319), Posadas, Misiones, Argentina",
+    "description": "Houses painting, drawing and engraving collections, along with rotating exhibitions and cultural events.",
+    "image": "images/museobellasartes.webp"
+  },
+  {
+    "name": "Posadas Waterfront Park",
+    "address": "Posadas, Misiones, Argentina",
+    "description": "A popular meeting place along the river with playgrounds, food stands, and green areas for relaxation.",
+    "image": "images/cascada.webp"
+  }
+]
