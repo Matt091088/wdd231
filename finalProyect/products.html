@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | Gentizi Home & Deco</title>
+  <meta name="description" content="Explore our collection of modern melamine furniture from Gentizi Home & Deco. Kitchens, TV panels, wardrobes and more.">
+  <meta name="author" content="Fernando Tau">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="images/logo.webp">
+</head>
+<body>
+  <header>
+    <div class="logo">
+  <img src="images/logo-medium.webp" alt="Gentizi Logo" class="logo-img" width="500" height="500">
+
+  <span>INSPIRE YOUR HOME</span>
+</div>
+    <nav>
+      <button id="menu-btn" aria-label="Menu">&#9776;</button>
+      <ul id="menu" class="hidden">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="products">
+      <h1>Our Products</h1>
+      <div id="product-grid" class="product-grid"></div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <span id="modal-close" class="close">&times;</span>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Gentizi Home & Deco | <a href="attributions.html">Attributions</a></p>
+    <p><a href="https://youtu.be/tu-video" target="_blank">Video Demo</a></p>
+  </footer>
+
+  <!-- Modal (oculto por defecto) -->
+<div id="productModal" class="modal hidden">
+  <div class="modal-content">
+    <span id="modal-close">&times;</span>
+    <h2 id="modal-title"></h2>
+    <img id="modal-image" src="" alt="Product image">
+    <p id="modal-description"></p>
+  </div>
+</div>
+
+
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>

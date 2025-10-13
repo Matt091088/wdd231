@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "name": "Modern Kitchen Deluxe",
+    "description": "Elegant melamine kitchen with black and oak wood finishes — stylish and functional.",
+    "price": "$1,850",
+    "image": "images/cocinadeluxe2.webp"
+  },
+  {
+    "id": 2,
+    "name": "L-Shape Kitchen",
+    "description": "Contemporary kitchen in concrete gray with black marble countertop and LED lighting.",
+    "price": "$2700",
+    "image": "images/cocinaenl2.JPG"
+  },
+  {
+    "id": 3,
+    "name": "TV Wall Panel",
+    "description": "Sleek TV panel with horizontal slots and hidden cable system — perfect for modern homes.",
+    "price": "$650",
+    "image": "images/paneltv-ranuras.webp"
+  },
+  {
+    "id": 4,
+    "name": "Compact Kitchen Design",
+    "description": "Smart and efficient melamine kitchen, ideal for small apartments with limited space.",
+    "price": "$1,290",
+    "image": "images/cocinaprotipoitaembeguazu.webp"
+  },
+  {
+    "id": 5,
+    "name": "Slim TV Panel",
+    "description": "Minimalist wall panel with natural wood tones and soft modern design.",
+    "price": "$680",
+    "image": "images/paneltvconranuras.webp"
+  },
+  {
+    "id": 6,
+    "name": "TV Rack with Drawers",
+    "description": "Low TV stand with multiple drawers and melamine wood texture for extra storage.",
+    "price": "$330",
+    "image": "images/racktvcajones.webp"
+  },
+  {
+    "id": 7,
+    "name": "Kitchen Inspiration",
+    "description": "Bright and modern kitchen layout with balanced colors and clean lines.",
+    "price": "$1,290",
+    "image": "images/cocinaenl.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Ceramic Vase Decor",
+    "description": "Elegant ceramic vase — adds a minimalist touch to any modern interior.",
+    "price": "$35",
+    "image": "images/adornoceramica.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Striped Decoration Set",
+    "description": "Two-tone decorative pieces that bring texture and personality to your home.",
+    "price": "$35",
+    "image": "images/adornosrayados.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Glass Frame Art",
+    "description": "Decorative glass frame — modern design ideal for hallways or living rooms.",
+    "price": "$15",
+    "image": "images/cuadrovidrio.jpeg"
+  },
+  {
+    "id": 11,
+    "name": "Glass Decoration Piece",
+    "description": "Handcrafted glass decor that reflects light and elegance in every detail.",
+    "price": "$25",
+    "image": "images/deco-vidrio.webp"
+  },
+  {
+    "id": 12,
+    "name": "Glass Flower Vase",
+    "description": "Transparent glass vase with soft curves — perfect for floral arrangements.",
+    "price": "$38",
+    "image": "images/florerovidrio.jpeg"
+  },
+  {
+    "id": 13,
+    "name": "Floating Shelves Set",
+    "description": "Modern melamine shelves to display decor items, books, or plants beautifully.",
+    "price": "$350",
+    "image": "images/repisas-deco.webp"
+  }
+]

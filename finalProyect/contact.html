@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Gentizi</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo-medium.webp" alt="Gentizi Logo" class="logo-img" width="500" height="500">
+
+      <span>INSPIRE YOUR HOME</span>
+    </div>
+    <nav>
+      <button id="menu-btn" aria-label="Menu">&#9776;</button>
+      <ul id="menu" class="hidden">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-form-section">
+      <h1>Contact Us</h1>
+      <form id="contactForm" action="form-action.html" method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="confirmation" class="hidden">Message sent successfully!</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Gentizi Home & Deco</p>
+  </footer>
+
+  <script type="module" src="js/contact.js"></script>
+
+  <!-- Modal de confirmación -->
+<div id="confirmationModal" class="modal hidden">
+  <div class="modal-content">
+    <span id="modal-close">&times;</span>
+    <h2>Message Sent!</h2>
+    <p>Thank you for contacting us. We will reply as soon as possible.</p>
+  </div>
+</div>
+
+</body>
+</html>
